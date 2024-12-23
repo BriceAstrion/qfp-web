@@ -226,7 +226,7 @@ const ContactForm = () => {
                                         <label className="flex items-center my-2 mt-4 mb-4">
                                             <input
                                                 type="radio"
-                                                value="product Inquiry"
+                                                value="productInquiry"
                                                 checked={purpose === "productInquiry"}
                                                 onChange={handleOptionChange}
                                                 className="mr-2"
