@@ -33,7 +33,7 @@ const ScienceBehindSolution = () => {
         text-black rounded-lg shadow-lg mt-10 max-w-screen-lg mx-auto">
             {/* Left Section (Text) */}
             <div className="sm:w-1/2 max-w-lg p-6 sm:p-8">
-                <h2 className="text-3xl font-bold mb-4 text-gray-800">The Science Behind the Solution</h2>
+                <h2 className="text-3xl font-bold mb-4 text-textMain">The Science Behind the Solution</h2>
                 <p className="mb-4">
                     Our team has developed a game-changing hydrogel using a combination of seaweed-derived alginate and
                     <strong className="text-gray-800"> CMC (carboxymethyl cellulose)</strong>, a naturally occurring
@@ -46,12 +46,12 @@ const ScienceBehindSolution = () => {
                     <li><strong className="text-gray-800">Versatile protection:</strong> fruits, vegetables, meat,
                         fish, and even nuts – our solution protects a wide variety of consumables.</li>
                 </ul>
-                <h3 className="text-2xl font-bold mt-6 mb-2 text-gray-800">A Cleaner Future</h3>
+                <h3 className="text-2xl font-bold mt-6 mb-2 text-textMain">A Cleaner Future</h3>
                 <p className="mb-4">
                     At QFP, we are not preserving food – we are preserving our planet. Our membrane is a sustainable
                     alternative to traditional plastic packaging, helping to fight the global plastic pollution crisis.
                 </p>
-                <h3 className="text-2xl font-bold mt-6 mb-2 text-gray-800">Consumer - Beneficial Qualities</h3>
+                <h3 className="text-2xl font-bold mt-6 mb-2 text-textMain">Consumer - Beneficial Qualities</h3>
                 <p className="mb-4">
                     At QPF, we have designed a solution for consumers:
                 </p>
@@ -91,9 +91,11 @@ const ScienceBehindSolution = () => {
 
 const InnovationPage = () => {
     return (
-        <div>
+        <div className="bg-bgMain">
             <InnovationAp/>
             <ScienceBehindSolution/>
+            {/* Footer Space */}
+            <div className="py-2"></div>
         </div>
     );
 };

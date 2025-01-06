@@ -47,7 +47,7 @@ const SustainabilityDropdown = () => {
             <button
                 ref={buttonRef}
                 onClick={handleClick}
-                className="text-green-600 hover:text-blue-600 font-semibold"
+                className="text-sdMain hover:text-blue-600 font-bold"
             >
                 Sustainability
             </button>
@@ -105,7 +105,7 @@ const SustainabilityDropdown = () => {
                                 <li><Link to="/sustainability/approach" className="text-green-600 text-sm font-medium
                                  hover:text-blue-600 flex items-center"><FaClipboardList className="mr-2"/>
                                     APPROACH</Link></li>
-                                <li><Link to="/sustainability/governance" className="text-blacktext-sm
+                                <li><Link to="/sustainability/governance" className="text-black text-sm
                                 hover:text-blue-600 flex items-center"><FaBook className="mr-2"/> Good Governance
                                 </Link></li>
                                 <li><Link to="/sustainability/stakeholders" className="text-black text-sm
@@ -126,7 +126,7 @@ const SustainabilityDropdown = () => {
                                 <li><Link to="/sustainability/moving-food" className="text-black text-sm
                                 hover:text-blue-600 flex items-center"><FaChartLine className="mr-2"/> Moving Food
                                     Forward</Link></li>
-                                <li><Link to="/sustainability/go-nature" className="text-blacktext-sm
+                                <li><Link to="/sustainability/go-nature" className="text-black text-sm
                                 hover:text-blue-600 flex items-center"><FaLeaf className="mr-2"/> Go Nature. Go Carton.
                                 </Link></li>
                                 <li><Link to="/sustainability/case-stories" className="text-black text-sm

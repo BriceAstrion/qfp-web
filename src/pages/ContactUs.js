@@ -9,7 +9,7 @@ import company from "../assets/company.png";
 
 const ContactUs = () => {
     return (
-        <div>
+        <div className="bg-bgMain">
             {/* Hero Section */}
             <div
                 className="relative p-10 text-white rounded-lg shadow-lg overflow-hidden h-[485px] flex items-center justify-center"
@@ -35,19 +35,21 @@ const ContactUs = () => {
                     {/* Business Inquiries */}
                     <div className="bg-white rounded-lg shadow-lg max-w-[600px] mx-auto overflow-hidden">
                         <div className="relative">
-                            <img
-                                src={business}
-                                alt="Business Icon"
-                                className="w-full h-[350px] object-cover"
-                            />
+                            <Link to="/contact-us/contact-sales">
+                                <img
+                                    src={business}
+                                    alt="Business Icon"
+                                    className="w-full h-[350px] object-cover"
+                                />
+                            </Link>
                         </div>
                         <div className="p-6 text-left">
-                            <h5 className="text-lg font-bold">Business Inquiries</h5>
+                            <h5 className="text-lg text-sdMain font-bold">Business Inquiries</h5>
                             <p className="text-sm text-gray-600 mt-2">
                                 Have questions about our solutions or need expert advice? Our friendly team is here
                                 to help! Fill out the form, and we'll get back to you as soon as possible.
                             </p>
-                            <a href="#business" className="text-blue-600 mt-4 block font-semibold">
+                            <a href="/contact-us/contact-sales" className="text-blue-600 mt-4 block font-semibold">
                                 Get in Touch Today!
                             </a>
                         </div>
@@ -56,19 +58,21 @@ const ContactUs = () => {
                     {/* Careers */}
                     <div className="bg-white rounded-lg shadow-lg max-w-[600px] mx-auto overflow-hidden">
                         <div className="relative">
-                            <img
-                                src={careers}
-                                alt="Careers Icon"
-                                className="w-full h-[350px] object-cover"
-                            />
+                            <Link to="/about/careers">
+                                <img
+                                    src={careers}
+                                    alt="Careers Icon"
+                                    className="w-full h-[350px] object-cover"
+                                />
+                            </Link>
                         </div>
                         <div className="p-6 text-left">
-                            <h5 className="text-lg font-bold">Careers</h5>
+                            <h5 className="text-lg text-sdMain font-bold">Careers</h5>
                             <p className="text-sm text-gray-600 mt-2">
                                 Food is essential to us all. And you can play a role in helping improve access to safe,
                                 nutritious food for everyone, everywhere.
                             </p>
-                            <a href="#careers" className="text-blue-600 mt-4 block font-semibold">
+                            <a href="/about/careers" className="text-blue-600 mt-4 block font-semibold">
                                 Learn more about QFP careers
                             </a>
                         </div>
@@ -87,7 +91,7 @@ const ContactUs = () => {
                             />
                         </a>
                         <div className="p-6 text-left">
-                            <h5 className="text-lg font-bold">Get To Know Our Suppliers</h5>
+                            <h5 className="text-lg text-sdMain font-bold">Get To Know Our Suppliers</h5>
                             <p className="text-sm text-gray-600 mt-2">
                                 Our supplier partners play a fundamental role in making a positive impact along our
                                 value chain
@@ -109,7 +113,7 @@ const ContactUs = () => {
                             />
                         </Link>
                         <div className="p-6 text-left">
-                            <h5 className="text-lg font-bold">Contact Press & Media</h5>
+                            <h5 className="text-lg text-sdMain font-bold">Contact Press & Media</h5>
                             <p className="text-sm text-gray-600 mt-2">
                                 If you are a media representative, please contact our Press & Media team using the
                                 contact details below to make your specific enquiry.
@@ -130,7 +134,7 @@ const ContactUs = () => {
                             />
                         </Link>
                         <div className="p-6 text-left">
-                            <h5 className="text-lg font-bold">Contact QFP</h5>
+                            <h5 className="text-lg text-sdMain font-bold">Contact QFP</h5>
                             <p className="text-sm text-gray-600 mt-2">
                                 Contact page for any general questions about our company, our sustainability approach,
                                 or how to get in touch.

@@ -21,7 +21,7 @@ const ScrollLogo = ({ logo, rotateStart, rotateEnd, headText, list }) => {
                     </ParallaxWrapper>
                 </div>
                 {isOpen && (
-                    <div className="absolute bg-white bg-opacity-90 p-4 rounded-lg shadow-lg bottom-16 right-0 text-black w-48 md:w-60">
+                    <div className="absolute bg-bgMain bg-opacity-90 p-4 rounded-lg shadow-lg bottom-16 right-0 text-textSecondary w-48 md:w-60">
                         <p className="text-xl font-bold mb-2 text-center">{headText}</p>
                         <ul className="list-disc pl-5 space-y-1">
                             {list.map((item, index) => (

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/New logo b.png";
 import AboutDropdown from "./AboutDropdown";
 import SolutionsDropdown from "./SolutionsDropdown";
 import SustainabilityDropdown from "./SustainabilityDropdown";
@@ -62,28 +62,20 @@ const NavBar = () => {
     }, [searchVisible]);
 
     return (
-        <div className="bg-white shadow">
+        <div className="bg-white">
             {/* Navbar container */}
             <nav className="container mx-auto px-4 py-3 flex items-center justify-between">
                 {/* Logo and branding */}
                 <div className="flex items-center space-x-3">
                     <Link to="/">
-                        <img src={logo} alt="Logo" className="h-16 w-auto" />
+                        <img src={logo} alt="Logo" className="h-20 w-20" />
                     </Link>
-                    <div>
-                        <h1 className="text-xl font-bold text-blue-800">
-                            Quantum Food Preservation
-                        </h1>
-                        <p className="text-sm font-bold text-red-600 ml-12">
-                            PROTECTS WHAT'S GOOD
-                        </p>
-                    </div>
                 </div>
 
                 {/* Hamburger and Search for Mobile */}
                 <div className="flex items-center space-x-4 md:hidden">
                     {/* Search Icon */}
-                    <button onClick={toggleSearch} className="text-green-600 hover:text-blue-600">
+                    <button onClick={toggleSearch} className="text-sdMain hover:text-blue-600">
                         <i
                             className={`fas ${
                                 searchVisible ? "fa-times text-red-600" : "fa-search"
@@ -107,15 +99,9 @@ const NavBar = () => {
                 </div>
 
                 {/* Links for Desktop */}
-                <div className="hidden md:flex md:items-center space-x-6 font-bold text-green-800">
+                <div className="hidden md:flex md:items-center space-x-6 font-bold text-lg text-bgMain">
                     <Link to="/contact-us" className="hover:text-blue-600">
                         Contact Us
-                    </Link>
-                    <Link to="/about/careers" className="hover:text-blue-600">
-                        Careers
-                    </Link>
-                    <Link to="/media" className="hover:text-blue-600">
-                        Media
                     </Link>
                     <Link to="/suppliers" className="hover:text-blue-600">
                         Suppliers
@@ -131,7 +117,7 @@ const NavBar = () => {
 
             {/* Second Navbar with Dropdowns (for Desktop) */}
             <nav className="container mx-auto px-4 py-3 hidden md:flex md:items-center md:justify-between">
-                <div className="hidden md:flex md:items-center space-x-6 font-bold text-green-800">
+                <div className="hidden md:flex md:items-center space-x-6 font-bold text-lg text-sdMain">
                     <div className="dropdown-container">
                         <div onClick={() => toggleDropdown("solutions")}>
                             <SolutionsDropdown isOpen={openDropdown === "solutions"} />
@@ -158,7 +144,7 @@ const NavBar = () => {
                         className={`fas ${
                             searchVisible
                                 ? "fa-times text-red-600"
-                                : "fa-search text-green-600"
+                                : "fa-search text-sdMain"
                         }`}
                         style={{ fontSize: "24px" }}
                     ></i>
@@ -168,27 +154,27 @@ const NavBar = () => {
             {/* Mobile Menu Links */}
             <div className={`${mobileMenuVisible ? "block" : "hidden"} md:hidden`}>
                 <div className="flex flex-col items-start space-y-4 px-4 py-2">
-                    <Link to="/contact-us" className="flex items-center space-x-2 text-green-600 hover:text-blue-600">
+                    <Link to="/contact-us" className="flex items-center space-x-2 font-bold text-bgMain hover:text-blue-600">
                         <i className="fas fa-envelope"></i>
                         <span>Contact Us</span>
                     </Link>
-                    <Link to="/careers" className="flex items-center space-x-2 text-green-600 hover:text-blue-600">
+                    <Link to="/careers" className="flex items-center space-x-2 font-bold text-bgMain hover:text-blue-600">
                         <i className="fas fa-briefcase"></i>
                         <span>Careers</span>
                     </Link>
-                    <Link to="/media" className="flex items-center space-x-2 text-green-600 hover:text-blue-600">
+                    <Link to="/media" className="flex items-center space-x-2 font-bold text-bgMain hover:text-blue-600">
                         <i className="fas fa-photo-video"></i>
                         <span>Media</span>
                     </Link>
-                    <Link to="/suppliers" className="flex items-center space-x-2 text-green-600 hover:text-blue-600">
+                    <Link to="/suppliers" className="flex items-center space-x-2 font-bold text-bgMain hover:text-blue-600">
                         <i className="fas fa-industry"></i>
                         <span>Suppliers</span>
                     </Link>
-                    <Link to="/global" className="flex items-center space-x-2 text-green-600 hover:text-blue-600">
+                    <Link to="/global" className="flex items-center space-x-2 font-bold text-bgMain hover:text-blue-600">
                         <i className="fas fa-globe"></i>
                         <span>Global</span>
                     </Link>
-                    <Link to="/login" className="flex items-center space-x-2 text-green-600 hover:text-blue-600">
+                    <Link to="/login" className="flex items-center space-x-2 font-bold text-bgMain hover:text-blue-600">
                         <i className="fas fa-user"></i>
                         <span>Login</span>
                     </Link>
@@ -196,7 +182,7 @@ const NavBar = () => {
 
                 <div className="flex flex-col items-start space-y-4 px-4 py-2">
                     <SolutionsDropdown />
-                    <Link to="/insights" className="flex items-center space-x-2 text-green-600 hover:text-blue-600">
+                    <Link to="/insights" className="flex items-center space-x-2 font-bold text-sdMain hover:text-blue-600">
                         <span>Insights</span>
                     </Link>
                     <SustainabilityDropdown />
@@ -217,7 +203,7 @@ const NavBar = () => {
                         />
                         <button
                             onClick={handleSearchClick}
-                            className="absolute right-3 top-3 text-green-600 hover:text-blue-600"
+                            className="absolute right-3 top-3 text-white hover:text-blue-600"
                         >
                             <i className="fas fa-search"></i>
                         </button>

@@ -3,7 +3,7 @@ import company from "../assets/company.png";
 
 const Company = () => {
     return (
-        <div className="min-h-screen bg-gray-100">
+        <div className="min-h-screen bg-bgMain">
             {/* Hero Section */}
             <div
                 className="relative p-10 text-white rounded-lg shadow-lg overflow-hidden h-[600px] flex items-center"

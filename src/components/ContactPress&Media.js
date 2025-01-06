@@ -17,7 +17,7 @@ const PressMedia = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gray-100">
+        <div className="min-h-screen bg-bgMain">
             {/* Hero Section */}
             <div
                 className="relative p-10 text-white rounded-lg shadow-lg overflow-hidden h-[500px] flex items-center"
@@ -27,9 +27,9 @@ const PressMedia = () => {
                     backgroundPosition: "center",
                 }}
             >
-                <div className="absolute left-16 sm:left-32 p-8 rounded-lg max-w-lg sm:max-w-xl bg-opacity-80 bg-gray-800">
+                <div className="absolute left-16 sm:left-32 p-8 rounded-lg max-w-lg sm:max-w-xl bg-opacity-80 bg-bgMain">
                     <h4 className="text-lg font-bold mb-2">CONTACT</h4>
-                    <h1 className="text-4xl font-bold mb-4">Press & Media</h1>
+                    <h1 className="text-4xl font-bold text-sdMain mb-4">Press & Media</h1>
                     <p className="mt-2 text-lg leading-relaxed">
                         For press and media related questions, find your relevant PR contact person below.
                     </p>
@@ -38,13 +38,13 @@ const PressMedia = () => {
 
             <div className="flex justify-center items-center py-6">
                 <div className="w-full max-w-[300mm] p-8 bg-transparent">
-                    <h2 className="text-3xl text-gray-600 font-bold mt-2 mb-6">Contacts</h2>
+                    <h2 className="text-3xl text-textSecondary font-bold mt-2 mb-6">Contacts</h2>
                     <div className="flex">
                         <div className="w-1/2 pr-6">
                             {contacts.slice(0, 2).map((contact) => (
                                 <div key={contact.email} className="mb-6">
-                                    <h3 className="text-xl font-semibold">{contact.name}</h3>
-                                    <p className="text-gray-700 mt-3">{contact.title}</p>
+                                    <h3 className="text-xl text-sdMain font-semibold">{contact.name}</h3>
+                                    <p className="text-textSecondary mt-3">{contact.title}</p>
                                     <button
                                         onClick={() => handleEmailClick(contact.email)}
                                         className="text-blue-500 mt-2 hover:underline">
@@ -61,8 +61,8 @@ const PressMedia = () => {
                         <div className="w-1/2 pl-6">
                             {contacts.slice(2).map((contact) => (
                                 <div key={contact.email} className="mb-6">
-                                    <h3 className="text-xl font-semibold">{contact.name}</h3>
-                                    <p className="text-gray-700 mt-3">{contact.title}</p>
+                                    <h3 className="text-xl text-sdMain font-semibold">{contact.name}</h3>
+                                    <p className="text-textSecondary mt-3">{contact.title}</p>
                                     <button
                                         onClick={() => handleEmailClick(contact.email)}
                                         className="text-blue-500 mt-2 hover:underline">
@@ -76,10 +76,10 @@ const PressMedia = () => {
             </div>
 
             {/* Newsroom Section */}
-            <div className="flex justify-center items-center py-6 bg-gray-100">
+            <div className="flex justify-center items-center py-6 bg-bgMain">
                 <div className="w-full max-w-[300mm] bg-white p-8 shadow-lg flex">
                     <div className="w-1/2 pr-6">
-                        <h2 className="text-3xl text-gray-600 font-bold mt-2 mb-6">Newsroom</h2>
+                        <h2 className="text-3xl text-bgMain font-bold mt-2 mb-6">Newsroom</h2>
                         <p className="text-lg text-gray-700">
                             The Tetra Pak Newsroom contains all our news & press releases as well as links to our
                             trends,

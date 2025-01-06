@@ -86,7 +86,7 @@ const ContactForm = () => {
 
 
     return (
-        <div className="min-h-screen bg-gray-100">
+        <div className="min-h-screen bg-bgMain">
             <div
                 className="relative p-10 text-white rounded-lg shadow-lg overflow-hidden h-[400px] flex items-center"
                 style={{
@@ -96,9 +96,9 @@ const ContactForm = () => {
                     backgroundRepeat: "no-repeat",
                 }}
             >
-                <div className="absolute left-16 p-8 rounded-lg max-w-lg bg-opacity-80 bg-gray-800">
+                <div className="absolute left-16 p-8 rounded-lg max-w-lg bg-opacity-80 bg-bgMain">
                     <h5 className="text-l font-bold mb-2">CONTACT</h5>
-                    <h1 className="text-4xl font-bold mb-4">General Questions</h1>
+                    <h1 className="text-4xl font-bold mb-4 text-sdMain">General Questions</h1>
                     <p className="text-gray-200 mt-3"> Any general questions about our company, our sustainability
                         approach or how to get in touch with us.</p>
                 </div>
@@ -124,17 +124,17 @@ const ContactForm = () => {
                             </div>
                         ) : (
                             <div className="w-full p-4">
-                                <h1 className="text-3xl text-gray-600 font-bold mb-4">Contact Form</h1>
+                                <h1 className="text-3xl text-textMain font-bold mb-4">Contact Form</h1>
                                 {step === 2 ? (
                                     <div>
-                                        <h2 className="text-2xl font-bold text-gray-500 mb-4 mt-6">Summary</h2>
+                                        <h2 className="text-2xl font-bold text-sdMain mb-4 mt-6">Summary</h2>
                                         <p className="text-lg text-gray-500">Purpose of contact: <strong
                                             className="ml-14">
                                             {purpose.charAt(0).toUpperCase() + purpose.slice(1)}</strong></p>
                                     </div>
                                 ) : step === 3 ? (
                                     <div>
-                                        <h2 className="text-2xl font-bold text-gray-500 mb-4">Summary</h2>
+                                        <h2 className="text-2xl font-bold text-textMain mb-4">Summary</h2>
                                         <div className="grid grid-cols-2 gap-y-2">
                                             <p className="text-lg text-gray-500">Purpose of contact:</p>
                                             <strong className="text-lg text-gray-500">{purpose.charAt(0).toUpperCase()
@@ -165,7 +165,7 @@ const ContactForm = () => {
                                                 </p>
                                             </div>
                                         </>
-                                        <h1 className="text-3xl text-gray-600 font-bold mb-4 mt-8">Contact Numbers</h1>
+                                        <h1 className="text-3xl text-textMain font-bold mb-4 mt-8">Contact Numbers</h1>
                                         <p className="text-gray-700 mb-4">
                                             For direct assistance with one of our team, feel free to contact<br/> the
                                             following numbers as you wish.
@@ -189,7 +189,7 @@ const ContactForm = () => {
                     </div>
 
                     {/* Transversal Line */}
-                    <div className="border-r border-gray-300"></div>
+                    <div className="border-r border-bgMain"></div>
 
                     {/* Contact Form */}
                     {!isSubmitted && (
@@ -384,7 +384,8 @@ const ContactForm = () => {
                                             onChange={() => setIsPolicyChecked(!isPolicyChecked)}
                                             className="mr-2"
                                         />
-                                        <span className="text-sm">By submitting this form, you confirm you have read and acknowledge Quantum Food Preservation's privacy policy.</span>
+                                        <span className="text-sm">By submitting this form, you confirm you have read and
+                                            acknowledge Quantum Food Preservation's privacy policy.</span>
                                         {errors.policy && <p className="text-red-500">{errors.policy}</p>}
                                     </div>
 

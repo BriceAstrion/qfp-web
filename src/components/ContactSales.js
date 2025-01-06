@@ -154,19 +154,19 @@ const ContactSales = () => {
                     backgroundRepeat: "no-repeat",
                 }}
             >
-                <div className="absolute left-40 p-8 rounded-lg max-w-xl">
-                    <h4 className="text-3xl font-bold">How can we help you?</h4>
+                <div className="absolute left-16 sm:left-32 p-8 rounded-lg max-w-lg sm:max-w-xl bg-opacity-80 bg-bgMain">
+                    <h4 className="text-3xl text-sdMain font-bold">How can we help you?</h4>
                     <p className="mt-2 text-md leading-relaxed">
                         We are happy to answer your questions – please feel free to reach out!
                     </p>
                 </div>
             </div>
 
-            <div className="flex flex-col min-h-screen bg-gray-100 p-8">
+            <div className="flex flex-col min-h-screen bg-bgMain p-8">
                 <div className="flex bg-white p-6 rounded-lg shadow-md w-full">
                     {/* Left Column - Title, Image, and Summary */}
                     <div className="w-1/2 pr-6 flex flex-col items-start">
-                        <h1 className="text-3xl font-bold text-gray-600 mb-4">Get in Touch with Us!</h1>
+                        <h1 className="text-3xl text-bgMain font-bold mb-4">Get in Touch with Us!</h1>
                         {step === 1 ? (
                             <>
                                 <div className="flex items-center mb-4">
@@ -179,7 +179,7 @@ const ContactSales = () => {
                             </>
                         ) : step === 2 ? (
                             <>
-                                <h1 className="text-lg font-bold text-gray-600 mb-2">Summary</h1>
+                                <h1 className="text-lg font-bold text-sdMain mb-2">Summary</h1>
                                 <div className="grid grid-cols-2 gap-2 text-sm text-gray-700">
                                     <div>Purpose of contact</div>
                                     <div className="font-semibold">{purpose}</div>
@@ -189,7 +189,7 @@ const ContactSales = () => {
                             </>
                         ) : step === 3 ? (
                             <>
-                                <h1 className="text-lg font-bold text-gray-600 mb-2">Summary</h1>
+                                <h1 className="text-lg font-bold text-sdMain mb-2">Summary</h1>
                                 <div className="grid grid-cols-2 gap-2 text-sm text-gray-700">
                                     <div>Purpose of contact</div>
                                     <div className="font-semibold">{purpose}</div>
@@ -201,7 +201,7 @@ const ContactSales = () => {
                             </>
                         ) : (
                             <>
-                                <h1 className="text-lg font-bold text-gray-600 mb-2">Summary</h1>
+                                <h1 className="text-lg font-bold text-sdMain mb-2">Summary</h1>
                                 <div className="grid grid-cols-2 gap-2 text-sm text-gray-700">
                                     <div>Purpose of contact</div>
                                     <div className="font-semibold">{purpose}</div>

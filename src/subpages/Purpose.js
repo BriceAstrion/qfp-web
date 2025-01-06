@@ -6,7 +6,7 @@ import planetImage from "../assets/img_1.png";
 
 const Purpose = () => {
     return (
-        <div className="min-h-screen bg-gray-100">
+        <div className="min-h-screen bg-bgMain">
             {/* Hero Section */}
             <div
                 className="relative p-10 text-white rounded-lg shadow-lg overflow-hidden h-[600px] flex items-center"
@@ -30,27 +30,27 @@ const Purpose = () => {
 
             {/* Content Section */}
             <div className="max-w-5xl mx-auto py-12 px-6 md:px-0 text-left">
-                <h2 className="text-3xl font-bold text-gray-800 mb-4">Our purpose:</h2>
-                <h3 className="text-2xl font-extrabold text-gray-900 mb-6">
+                <h2 className="text-3xl font-bold text-textSecondary mb-4">Our purpose:</h2>
+                <h3 className="text-2xl font-extrabold text-sdMain mb-6">
                     We commit to making food safe and available, everywhere and we promise to protect what’s good: food,
                     people and the planet.
                 </h3>
 
-                <p className="text-gray-700 leading-relaxed mb-6">
+                <p className="text-textSecondary leading-relaxed mb-6">
                     We firmly believe that being able to access safe and nutritious food should be considered a right,
                     not a privilege. But how do you package a litre of milk, transport it to where it’s needed most, and
                     know that when it’s eventually opened, even months later, it is safe and tasty to drink? That’s the
                     challenge we solve with our customers every day. The ‘how’ is a little technical however...
                 </p>
 
-                <p className="text-gray-700 leading-relaxed mb-6">
+                <p className="text-textSecondary leading-relaxed mb-6">
                     We pioneered aseptic technology, which allows us to package a commercially sterile food product so
                     that it can last longer, be distributed further and stored without the need for refrigeration or
                     preservatives. This innovative technology underpins our ability to get food and drink that is safe
                     to consume to the remotest parts of the world where access to safe food cannot be taken for granted.
                 </p>
 
-                <p className="text-gray-700 leading-relaxed mb-6">
+                <p className="text-textSecondary leading-relaxed mb-6">
                     And this kind of technology has never been more in-need. By 2030, there will be even more people in
                     the world – all of whom will be relying on a healthy, nourishing and affordable diet to thrive. Our
                     ability to make sure food and drink can reach the people who need it, while protecting its

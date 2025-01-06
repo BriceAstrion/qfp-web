@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import careers from "../assets/careers.jpg";
+import careers from "../assets/careers.png";
 import connect from "../assets/connect.png";
 
 const Careers = () => {
     return (
-        <div>
+        <div className="bg-bgMain">
             {/* Careers Section */}
             <div
-                className="relative p-10 text-white rounded-lg shadow-lg overflow-hidden h-[500px] flex items-center"
+                className="relative p-10 text-white rounded-lg shadow-lg overflow-hidden h-[400px] flex items-center"
                 style={{
                     backgroundImage: `url(${careers})`,
                     backgroundSize: "cover",
@@ -41,7 +41,7 @@ const Careers = () => {
                             backgroundColor: "rgba(255, 255, 255, 0.8)",
                         }}
                     >
-                        <h2 className="text-3xl font-bold text-gray-600">Connected by purpose</h2>
+                        <h2 className="text-3xl font-bold text-sdMain">Connected by purpose</h2>
                         <p className="mt-4 text-gray-700 leading-relaxed">
                             Being part of our team means contributing to groundbreaking innovations that extend the
                             shelf life of soft and hard foods, reducing waste, and promoting sustainability in the food
@@ -74,7 +74,7 @@ const Careers = () => {
                             backgroundColor: "rgba(255, 255, 255, 0.8)",
                         }}
                     >
-                        <h2 className="text-3xl font-bold text-gray-600">Discover our roles</h2>
+                        <h2 className="text-3xl font-bold text-sdMain">Discover our roles</h2>
                         <p className="mt-4 text-gray-700 leading-relaxed">
                             We offer rewarding roles across our organization, including engineering, research and
                             development, and production operations. Whether you're starting your career or seeking a
@@ -100,10 +100,10 @@ const Careers = () => {
                         alt="Learning and Development"
                         className="rounded-lg w-full mb-6"
                     />
-                    <h2 className="text-3xl font-bold text-gray-600 mb-4">
+                    <h2 className="text-3xl font-bold text-sdMain mb-4">
                         Learning and development
                     </h2>
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-textSecondary leading-relaxed">
                         Growth here isn’t just personal. It’s professional. We have a well-established focus on
                         structured learning and development for all roles at our company. From technical training on
                         food preservation technologies to leadership development, mentorship, and international
@@ -125,10 +125,10 @@ const Careers = () => {
                         alt="Rewards and Benefits"
                         className="rounded-lg w-full mb-6"
                     />
-                    <h2 className="text-3xl font-bold text-gray-600 mb-4">
+                    <h2 className="text-3xl font-bold text-sdMain mb-4">
                         Rewards and benefits
                     </h2>
-                    <p className="text-gray-700 leading-relaxed text-left">
+                    <p className="text-textSecondary leading-relaxed text-left">
                         We’re creating an environment that supports and rewards you, so you have what you need to reach
                         your potential with us. Our competitive rewards framework recognizes high performance and is
                         based on equity and fairness. We also offer benefits designed to support your wellbeing while

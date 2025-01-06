@@ -55,7 +55,7 @@ const AboutDropdown = () => {
             <button
                 ref={buttonRef}
                 onClick={handleClick}
-                className="text-green-600 hover:text-blue-600 font-semibold"
+                className="text-sdMain hover:text-blue-600 font-bold"
             >
                 About QFP
             </button>
